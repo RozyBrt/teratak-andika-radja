@@ -47,7 +47,7 @@ export const INITIAL_CATEGORIES: Category[] = [
 
 export const INITIAL_PRODUCTS: Product[] = [
   {
-    id: 'p1111111-1111-1111-1111-111111111111',
+    id: 'b1111111-1111-1111-1111-111111111111',
     category_id: 'c1111111-1111-1111-1111-111111111111',
     title: 'Teratak Standar & Semi Dekorasi (4x5 Meter)',
     slug: 'teratak-4x5-meter',
@@ -68,7 +68,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     variants: [
       {
         id: 'v1',
-        product_id: 'p1111111-1111-1111-1111-111111111111',
+        product_id: 'b1111111-1111-1111-1111-111111111111',
         variant_name: '4x5 M - Plafon Polos Terpal',
         dimension: '4x5 Meter',
         has_slayar: false,
@@ -78,7 +78,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         id: 'v2',
-        product_id: 'p1111111-1111-1111-1111-111111111111',
+        product_id: 'b1111111-1111-1111-1111-111111111111',
         variant_name: '4x5 M - Full Slayar Dekorasi Mewah',
         dimension: '4x5 Meter',
         has_slayar: true,
@@ -89,7 +89,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ]
   },
   {
-    id: 'p2222222-2222-2222-2222-222222222222',
+    id: 'b2222222-2222-2222-2222-222222222222',
     category_id: 'c1111111-1111-1111-1111-111111111111',
     title: 'Teratak Lapang (4x6 Meter)',
     slug: 'teratak-4x6-meter',
@@ -109,7 +109,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     variants: [
       {
         id: 'v3',
-        product_id: 'p2222222-2222-2222-2222-222222222222',
+        product_id: 'b2222222-2222-2222-2222-222222222222',
         variant_name: '4x6 M - Plafon Polos Terpal',
         dimension: '4x6 Meter',
         has_slayar: false,
@@ -119,7 +119,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         id: 'v4',
-        product_id: 'p2222222-2222-2222-2222-222222222222',
+        product_id: 'b2222222-2222-2222-2222-222222222222',
         variant_name: '4x6 M - Full Slayar Dekorasi Mewah',
         dimension: '4x6 Meter',
         has_slayar: true,
@@ -130,7 +130,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ]
   },
   {
-    id: 'p3333333-3333-3333-3333-333333333333',
+    id: 'b3333333-3333-3333-3333-333333333333',
     category_id: 'c2222222-2222-2222-2222-222222222222',
     title: 'Pentas Panggung Moduler (3x4 Meter)',
     slug: 'pentas-panggung-3x4',
@@ -150,7 +150,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     variants: [
       {
         id: 'v5',
-        product_id: 'p3333333-3333-3333-3333-333333333333',
+        product_id: 'b3333333-3333-3333-3333-333333333333',
         variant_name: 'Pentas 3x4 M - Standar Karpet Merah',
         dimension: '3x4 Meter',
         has_slayar: false,
@@ -160,7 +160,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         id: 'v6',
-        product_id: 'p3333333-3333-3333-3333-333333333333',
+        product_id: 'b3333333-3333-3333-3333-333333333333',
         variant_name: 'Pentas 3x4 M + Backdrop Kain Minimalis',
         dimension: '3x4 Meter',
         has_slayar: true,
@@ -171,7 +171,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ]
   },
   {
-    id: 'p4444444-4444-4444-4444-444444444444',
+    id: 'b4444444-4444-4444-4444-444444444444',
     category_id: 'c3333333-3333-3333-3333-333333333333',
     title: 'Kursi Futura & Kursi Plastik Pesta',
     slug: 'kursi-pesta',
@@ -191,7 +191,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     variants: [
       {
         id: 'v7',
-        product_id: 'p4444444-4444-4444-4444-444444444444',
+        product_id: 'b4444444-4444-4444-4444-444444444444',
         variant_name: 'Kursi Plastik Napolly Bersih',
         dimension: 'Standar',
         has_slayar: false,
@@ -201,7 +201,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         id: 'v8',
-        product_id: 'p4444444-4444-4444-4444-444444444444',
+        product_id: 'b4444444-4444-4444-4444-444444444444',
         variant_name: 'Kursi Futura Polos (Busa Empuk)',
         dimension: 'Standar',
         has_slayar: false,
@@ -211,7 +211,7 @@ export const INITIAL_PRODUCTS: Product[] = [
       },
       {
         id: 'v9',
-        product_id: 'p4444444-4444-4444-4444-444444444444',
+        product_id: 'b4444444-4444-4444-4444-444444444444',
         variant_name: 'Kursi Futura + Cover Sarung Putih & Pita',
         dimension: 'Standar',
         has_slayar: true,
@@ -222,7 +222,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     ]
   },
   {
-    id: 'p5555555-5555-5555-5555-555555555555',
+    id: 'b5555555-5555-5555-5555-555555555555',
     category_id: 'c5555555-5555-5555-5555-555555555555',
     title: 'Paket Bundling Syukuran Keluarga',
     slug: 'paket-syukuran-keluarga',
@@ -245,7 +245,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     variants: [
       {
         id: 'v10',
-        product_id: 'p5555555-5555-5555-5555-555555555555',
+        product_id: 'b5555555-5555-5555-5555-555555555555',
         variant_name: 'Paket Syukuran Lengkap (Kursi Plastik)',
         dimension: '2 Tenda 4x5 + 100 Kursi',
         has_slayar: false,

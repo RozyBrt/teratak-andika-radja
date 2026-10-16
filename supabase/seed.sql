@@ -14,7 +14,7 @@ ON CONFLICT (slug) DO NOTHING;
 -- 2. Insert Products
 INSERT INTO products (id, category_id, title, slug, description, featured_image_url, gallery_urls, specifications, is_active, is_featured) VALUES
 (
-    'p1111111-1111-1111-1111-111111111111',
+    'b1111111-1111-1111-1111-111111111111',
     'c1111111-1111-1111-1111-111111111111',
     'Teratak Standar & Semi Dekorasi (4x5 Meter)',
     'teratak-4x5-meter',
@@ -29,7 +29,7 @@ INSERT INTO products (id, category_id, title, slug, description, featured_image_
     true
 ),
 (
-    'p2222222-2222-2222-2222-222222222222',
+    'b2222222-2222-2222-2222-222222222222',
     'c1111111-1111-1111-1111-111111111111',
     'Teratak Lapang (4x6 Meter)',
     'teratak-4x6-meter',
@@ -43,7 +43,7 @@ INSERT INTO products (id, category_id, title, slug, description, featured_image_
     true
 ),
 (
-    'p3333333-3333-3333-3333-333333333333',
+    'b3333333-3333-3333-3333-333333333333',
     'c2222222-2222-2222-2222-222222222222',
     'Pentas Panggung Moduler (3x4 Meter)',
     'pentas-panggung-3x4',
@@ -57,7 +57,7 @@ INSERT INTO products (id, category_id, title, slug, description, featured_image_
     true
 ),
 (
-    'p4444444-4444-4444-4444-444444444444',
+    'b4444444-4444-4444-4444-444444444444',
     'c3333333-3333-3333-3333-333333333333',
     'Kursi Futura & Kursi Plastik Pesta',
     'kursi-pesta',
@@ -71,7 +71,7 @@ INSERT INTO products (id, category_id, title, slug, description, featured_image_
     false
 ),
 (
-    'p5555555-5555-5555-5555-555555555555',
+    'b5555555-5555-5555-5555-555555555555',
     'c5555555-5555-5555-5555-555555555555',
     'Paket Bundling Syukuran Keluarga (Tenda + 100 Kursi)',
     'paket-syukuran-keluarga',
@@ -89,18 +89,19 @@ ON CONFLICT (slug) DO NOTHING;
 -- 3. Insert Product Variants
 INSERT INTO product_variants (product_id, variant_name, dimension, has_slayar, base_price, price_unit, is_available) VALUES
 -- Variants for Teratak 4x5
-('p1111111-1111-1111-1111-111111111111', '4x5 M - Plafon Polos Terpal', '4x5 Meter', false, 250000, 'unit/hari', true),
-('p1111111-1111-1111-1111-111111111111', '4x5 M - Full Slayar Dekorasi Mewah', '4x5 Meter', true, 400000, 'unit/hari', true),
+('b1111111-1111-1111-1111-111111111111', '4x5 M - Plafon Polos Terpal', '4x5 Meter', false, 250000, 'unit/hari', true),
+('b1111111-1111-1111-1111-111111111111', '4x5 M - Full Slayar Dekorasi Mewah', '4x5 Meter', true, 400000, 'unit/hari', true),
 -- Variants for Teratak 4x6
-('p2222222-2222-2222-2222-222222222222', '4x6 M - Plafon Polos Terpal', '4x6 Meter', false, 300000, 'unit/hari', true),
-('p2222222-2222-2222-2222-222222222222', '4x6 M - Full Slayar Dekorasi Mewah', '4x6 Meter', true, 480000, 'unit/hari', true),
+('b2222222-2222-2222-2222-222222222222', '4x6 M - Plafon Polos Terpal', '4x6 Meter', false, 300000, 'unit/hari', true),
+('b2222222-2222-2222-2222-222222222222', '4x6 M - Full Slayar Dekorasi Mewah', '4x6 Meter', true, 480000, 'unit/hari', true),
 -- Variants for Pentas 3x4
-('p3333333-3333-3333-3333-333333333333', 'Pentas 3x4 M - Standar Karpet Merah', '3x4 Meter', false, 450000, 'set/hari', true),
-('p3333333-3333-3333-3333-333333333333', 'Pentas 3x4 M + Backdrop Kain Minimalis', '3x4 Meter', true, 650000, 'set/hari', true),
+('b3333333-3333-3333-3333-333333333333', 'Pentas 3x4 M - Standar Karpet Merah', '3x4 Meter', false, 450000, 'set/hari', true),
+('b3333333-3333-3333-3333-333333333333', 'Pentas 3x4 M + Backdrop Kain Minimalis', '3x4 Meter', true, 650000, 'set/hari', true),
 -- Variants for Kursi
-('p4444444-4444-4444-4444-444444444444', 'Kursi Plastik Napolly Bersih', 'Standar', false, 3000, 'unit/hari', true),
-('p4444444-4444-4444-4444-444444444444', 'Kursi Futura Polos (Busa Empuk)', 'Standar', false, 8000, 'unit/hari', true),
-('p4444444-4444-4444-4444-444444444444', 'Kursi Futura + Cover Sarung Putih & Pita', 'Standar', true, 13000, 'unit/hari', true),
+('b4444444-4444-4444-4444-444444444444', 'Kursi Plastik Napolly Bersih', 'Standar', false, 3000, 'unit/hari', true),
+('b4444444-4444-4444-4444-444444444444', 'Kursi Futura Polos (Busa Empuk)', 'Standar', false, 8000, 'unit/hari', true),
+('b4444444-4444-4444-4444-444444444444', 'Kursi Futura + Cover Sarung Putih & Pita', 'Standar', true, 13000, 'unit/hari', true),
 -- Variants for Paket Bundling
-('p5555555-5555-5555-5555-555555555555', 'Paket Syukuran Lengkap (Kursi Plastik)', '2 Tenda 4x5 + 100 Kursi', false, 950000, 'paket/acara', true),
-('p5555555-5555-5555-5555-555555555555', 'Paket Syukuran Eksklusif (Kursi Futura Cover)', '2 Tenda 4x5 + 100 Kursi Cover', true, 1650000, 'paket/acara', true);
+('b5555555-5555-5555-5555-555555555555', 'Paket Syukuran Lengkap (Kursi Plastik)', '2 Tenda 4x5 + 100 Kursi', false, 950000, 'paket/acara', true),
+('b5555555-5555-5555-5555-555555555555', 'Paket Syukuran Eksklusif (Kursi Futura Cover)', '2 Tenda 4x5 + 100 Kursi Cover', true, 1650000, 'paket/acara', true);
+
