@@ -89,7 +89,7 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5" />
                 <span className="text-stone-300">
-                  Pangkalan Teratak Andika Raja. Melayani area sekitar dan siap survei lokasi.
+                  Jl. Teuku Umar, Penanggalan, Kec. Penanggalan, Kota Subulussalam, Aceh 24782.
                 </span>
               </div>
               <div className="flex items-center gap-3">

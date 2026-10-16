@@ -61,10 +61,10 @@ export default function ContactPage() {
             </div>
             <h3 className="font-heading font-bold text-[#064E3B] text-lg">Pangkalan Operasional</h3>
             <p className="text-xs text-stone-600 leading-relaxed">
-              Pangkalan Teratak Andika Raja. Siap melayani pengantaran dan pemasangan ke seluruh area sekitarnya.
+              Jl. Teuku Umar, Penanggalan, Kec. Penanggalan, Kota Subulussalam, Aceh 24782.
             </p>
             <span className="text-xs font-semibold text-[#8C6514] bg-[#F4EFE6] px-3 py-1 rounded-md border border-[#C29B38]/30">
-              Survei Lokasi Tersedia
+              Survei Lokasi & Antar Area Subulussalam
             </span>
           </div>
 
@@ -97,8 +97,8 @@ export default function ContactPage() {
             </h2>
             <div className="relative w-full h-80 sm:h-96 rounded-lg overflow-hidden bg-[#F4EFE6] border border-[#C29B38]/30">
               <iframe
-                title="Peta Lokasi Teratak Andika Raja"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127672.27415486808!2d101.3789461141368!3d0.5186259837944738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ac033f7c11f7%3A0xf639ffc8f352ec77!2sPekanbaru%2C%20Riau!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+                title="Peta Lokasi Teratak Andika Raja - Subulussalam Aceh"
+                src="https://maps.google.com/maps?q=J2H9%2BWH6%2C+Jl.+Teuku+Umar%2C+Penanggalan%2C+Kec.+Penanggalan%2C+Kota+Subulussalam%2C+Aceh+24782&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -109,7 +109,7 @@ export default function ContactPage() {
             </div>
             <div className="flex items-center gap-2 text-xs text-stone-600">
               <Truck className="w-4 h-4 text-[#064E3B]" />
-              <span>Melayani pengiriman dan pemasangan terstandar ke rumah warga, gedung, lapangan, maupun instansi.</span>
+              <span>Melayani pengiriman dan pemasangan terstandar ke rumah warga, gedung, lapangan, maupun instansi di Kota Subulussalam dan sekitarnya.</span>
             </div>
           </div>
 
