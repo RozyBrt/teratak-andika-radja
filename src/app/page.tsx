@@ -32,7 +32,7 @@ export default async function HomePage() {
     description: 'Jasa penyewaan perlengkapan acara: teratak, tenda dekorasi slayar, pentas panggung, kursi, dan meja pesta.',
     url: 'https://teratak-andika-radja.vercel.app',
     telephone: '+6282284903333',
-    priceRange: 'Rp 3.000 - Rp 1.650.000',
+    priceRange: 'Hubungi Pengelola',
     areaServed: 'Kota Subulussalam, Aceh',
     serviceType: 'Penyewaan Tenda dan Perlengkapan Pesta',
   };

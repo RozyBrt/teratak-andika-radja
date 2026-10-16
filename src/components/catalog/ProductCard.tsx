@@ -67,14 +67,11 @@ export default function ProductCard({ product }: ProductCardProps) {
         {/* Price & Actions */}
         <div className="pt-3.5 border-t border-zinc-150 flex items-center justify-between gap-3">
           <div>
-            <span className="block text-[10px] font-medium text-zinc-400 uppercase tracking-wider">Mulai</span>
+            <span className="block text-[10px] font-medium text-zinc-400 uppercase tracking-wider">Tarif Sewa</span>
             <div className="flex items-baseline gap-1">
-              <span className="text-base sm:text-lg font-bold text-zinc-950">
-                {lowestPrice ? formatRupiah(lowestPrice) : 'Hubungi Kami'}
+              <span className="text-xs sm:text-sm font-bold text-zinc-900">
+                Hubungi Pengelola
               </span>
-              {lowestVariant?.price_unit && (
-                <span className="text-[11px] text-zinc-500">/{lowestVariant.price_unit}</span>
-              )}
             </div>
           </div>
 
@@ -97,7 +94,7 @@ export default function ProductCard({ product }: ProductCardProps) {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-3.5 py-2 rounded-lg text-xs font-semibold text-white bg-zinc-900 hover:bg-zinc-800 transition-colors shadow-2xs"
             >
-              Sewa
+              Tanya Sewa
             </a>
           </div>
         </div>

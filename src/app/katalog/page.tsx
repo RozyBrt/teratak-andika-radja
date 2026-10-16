@@ -25,7 +25,7 @@ export default async function CatalogPage() {
         <div className="space-y-2 pb-5 border-b border-zinc-200">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-zinc-100 text-zinc-800 border border-zinc-200 text-xs font-semibold">
             <Tent className="w-3.5 h-3.5 text-zinc-700" />
-            <span>Katalog Lengkap & Tarif Transparan</span>
+            <span>Katalog Sewa & Spesifikasi Lengkap</span>
           </div>
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-zinc-950 tracking-tight">
             Katalog Sewa Perlengkapan Acara

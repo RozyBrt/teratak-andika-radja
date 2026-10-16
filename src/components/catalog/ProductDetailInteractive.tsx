@@ -168,10 +168,10 @@ export default function ProductDetailInteractive({ product }: ProductDetailInter
                       </div>
                     </div>
                     <div className="text-right">
-                      <div className="font-bold text-zinc-950 text-sm">
-                        {formatRupiah(v.base_price)}
+                      <div className="font-semibold text-zinc-700 text-xs sm:text-sm">
+                        Hubungi Pengelola
                       </div>
-                      <div className="text-[10px] text-zinc-500">/{v.price_unit}</div>
+                      <div className="text-[10px] text-zinc-400">Tarif Dalam Penyesuaian</div>
                     </div>
                   </button>
                 );
@@ -183,17 +183,17 @@ export default function ProductDetailInteractive({ product }: ProductDetailInter
         {/* Price Card & CTA Button */}
         <div className="p-6 bg-zinc-950 text-white rounded-2xl border border-zinc-850 shadow-sm space-y-5">
           <div>
-            <span className="text-xs text-zinc-400 block mb-1">Rincian Estimasi Biaya Sewa</span>
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-zinc-850 text-zinc-300 text-[11px] font-medium mb-3 border border-zinc-800">
+              <Clock className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Status Tarif: Dalam Penyesuaian</span>
+            </div>
             <div className="flex items-baseline gap-2">
               <span className="text-2xl sm:text-3xl font-extrabold text-white">
-                {selectedVariant ? formatRupiah(selectedVariant.base_price) : 'Hubungi Kami'}
+                Hubungi Pengelola
               </span>
-              {selectedVariant?.price_unit && (
-                <span className="text-xs text-zinc-400">/ {selectedVariant.price_unit}</span>
-              )}
             </div>
-            <p className="text-xs text-zinc-400 mt-2 leading-relaxed">
-              *Tarif sewa sudah mencakup instalasi pemasangan dan pembongkaran rapi oleh tim kami di lokasi acara.
+            <p className="text-xs text-zinc-400 mt-2.5 leading-relaxed">
+              *Daftar harga resmi saat ini belum ditampilkan di website. Silakan hubungi langsung pihak pengelola via WhatsApp untuk informasi tarif sewa dan ketersediaan tanggal acara.
             </p>
           </div>
 
@@ -205,7 +205,7 @@ export default function ProductDetailInteractive({ product }: ProductDetailInter
             className="flex items-center justify-center gap-2.5 w-full py-3.5 px-6 rounded-lg font-semibold text-sm text-zinc-950 bg-white hover:bg-zinc-100 transition-colors shadow-2xs"
           >
             <MessageSquare className="w-4 h-4 text-emerald-600" />
-            <span>Sewa via WhatsApp Sekarang</span>
+            <span>Tanya Tarif & Sewa via WhatsApp</span>
           </a>
 
           <div className="pt-3 border-t border-zinc-850 space-y-1.5 text-xs text-zinc-400">
