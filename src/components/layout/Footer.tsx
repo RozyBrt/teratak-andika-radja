@@ -1,65 +1,65 @@
 import Link from 'next/link';
-import { Tent, Phone, MapPin, Clock, ShieldCheck } from 'lucide-react';
+import { Tent, Phone, MapPin, Clock, CheckCircle2 } from 'lucide-react';
 import { getWhatsAppUrl } from '@/lib/data';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#022C22] text-stone-300 pt-16 pb-12 border-t-2 border-[#C29B38]/40">
+    <footer className="bg-zinc-950 text-zinc-400 pt-14 pb-12 border-t border-zinc-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 pb-12 border-b border-[#C29B38]/20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 pb-12 border-b border-zinc-850">
           
           {/* Brand & Slogan */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg emerald-gradient flex items-center justify-center text-[#D4AF37] border border-[#C29B38]/40 shadow-xs">
+              <div className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-white shadow-2xs">
                 <Tent className="w-5 h-5 stroke-[2]" />
               </div>
-              <span className="text-xl font-heading font-bold text-[#D4AF37] tracking-wide">
+              <span className="text-lg font-bold text-white tracking-tight">
                 Teratak Andika Raja
               </span>
             </div>
-            <p className="text-sm text-stone-300 leading-relaxed">
-              Jasa penyewaan tenda teratak pesta, pentas pelaminan, kursi, meja, dan perlengkapan hajatan terpercaya. Mengedepankan kerapian, kekokohan rangka, dan pelayanan tepat waktu.
+            <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+              Penyedia sewa tenda teratak pesta, pentas pelaminan, kursi pesta, dan perlengkapan acara berstandar rapi, konstruksi kokoh, dan tarif transparan.
             </p>
-            <div className="flex items-center gap-2 text-xs text-[#D4AF37] font-semibold">
-              <ShieldCheck className="w-4 h-4 text-[#D4AF37]" />
-              <span>Pemasangan Rapi & Kokoh Terstandar</span>
+            <div className="flex items-center gap-2 text-xs text-zinc-300 font-medium">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+              <span>Pemasangan Rapi & Tepat Waktu</span>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-[#D4AF37] font-heading font-bold text-base mb-4 tracking-wide">
+            <h4 className="text-white font-semibold text-sm mb-3.5 tracking-tight">
               Navigasi Halaman
             </h4>
-            <ul className="space-y-2.5 text-sm">
+            <ul className="space-y-2 text-xs sm:text-sm">
               <li>
-                <Link href="/" className="hover:text-[#D4AF37] transition-colors">
+                <Link href="/" className="hover:text-white transition-colors">
                   Beranda Utama
                 </Link>
               </li>
               <li>
-                <Link href="/katalog" className="hover:text-[#D4AF37] transition-colors">
-                  Katalog Tenda Teratak
+                <Link href="/katalog" className="hover:text-white transition-colors">
+                  Katalog Sewa Tenda
                 </Link>
               </li>
               <li>
-                <Link href="/katalog?kategori=pentas" className="hover:text-[#D4AF37] transition-colors">
+                <Link href="/katalog?kategori=pentas" className="hover:text-white transition-colors">
                   Pentas & Panggung Acara
                 </Link>
               </li>
               <li>
-                <Link href="/katalog?kategori=kursi-meja" className="hover:text-[#D4AF37] transition-colors">
+                <Link href="/katalog?kategori=kursi-meja" className="hover:text-white transition-colors">
                   Sewa Kursi & Meja Pesta
                 </Link>
               </li>
               <li>
-                <Link href="/galeri" className="hover:text-[#D4AF37] transition-colors">
+                <Link href="/galeri" className="hover:text-white transition-colors">
                   Dokumentasi Terpasang
                 </Link>
               </li>
               <li>
-                <Link href="/kontak" className="hover:text-[#D4AF37] transition-colors">
+                <Link href="/kontak" className="hover:text-white transition-colors">
                   Peta Lokasi & Kontak
                 </Link>
               </li>
@@ -68,10 +68,10 @@ export default function Footer() {
 
           {/* Layanan & Keunggulan */}
           <div>
-            <h4 className="text-[#D4AF37] font-heading font-bold text-base mb-4 tracking-wide">
-              Layanan Acara Warga
+            <h4 className="text-white font-semibold text-sm mb-3.5 tracking-tight">
+              Layanan Acara
             </h4>
-            <ul className="space-y-2.5 text-sm text-stone-300">
+            <ul className="space-y-2 text-xs sm:text-sm text-zinc-400">
               <li>• Resepsi Pernikahan & Akad</li>
               <li>• Syukuran Khitanan & Aqiqah</li>
               <li>• Doa Bersama & Pengajian</li>
@@ -81,30 +81,30 @@ export default function Footer() {
           </div>
 
           {/* Kontak & Lokasi */}
-          <div className="space-y-4">
-            <h4 className="text-[#D4AF37] font-heading font-bold text-base mb-4 tracking-wide">
-              Hubungi Pengelola
+          <div className="space-y-3.5">
+            <h4 className="text-white font-semibold text-sm mb-3.5 tracking-tight">
+              Pangkalan & Kontak
             </h4>
-            <div className="space-y-3 text-sm">
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#D4AF37] shrink-0 mt-0.5" />
-                <span className="text-stone-300">
+            <div className="space-y-2.5 text-xs sm:text-sm">
+              <div className="flex items-start gap-2.5">
+                <MapPin className="w-4 h-4 text-zinc-400 shrink-0 mt-0.5" />
+                <span className="text-zinc-300">
                   Jl. Teuku Umar, Penanggalan, Kec. Penanggalan, Kota Subulussalam, Aceh 24782.
                 </span>
               </div>
-              <div className="flex items-center gap-3">
-                <Clock className="w-5 h-5 text-[#D4AF37] shrink-0" />
-                <span className="text-stone-300">
-                  Layanan Konsultasi: 07.00 - 22.00 WIB
+              <div className="flex items-center gap-2.5">
+                <Clock className="w-4 h-4 text-zinc-400 shrink-0" />
+                <span className="text-zinc-300">
+                  Konsultasi: 07.00 - 22.00 WIB
                 </span>
               </div>
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-emerald-400 shrink-0" />
+              <div className="flex items-center gap-2.5 pt-1">
+                <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
                 <a
                   href={getWhatsAppUrl({})}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-emerald-400 hover:underline font-semibold"
+                  className="text-emerald-400 hover:text-emerald-300 font-semibold"
                 >
                   WhatsApp: +62 822-8490-3333
                 </a>
@@ -115,12 +115,12 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 gap-4">
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-500 gap-3">
           <p>
             © {new Date().getFullYear()} Teratak Andika Raja. Hak Cipta Dilindungi.
           </p>
-          <p className="text-[#D4AF37]">
-            Usaha Persewaan Perlengkapan Pesta & Resepsi
+          <p className="text-zinc-400">
+            Katalog Sewa Tenda & Perlengkapan Acara Subulussalam
           </p>
         </div>
       </div>

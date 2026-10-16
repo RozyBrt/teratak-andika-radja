@@ -12,74 +12,74 @@ import { getWhatsAppUrl } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Kontak & Lokasi Pangkalan: Teratak Andika Raja',
-  description: 'Hubungi admin Teratak Andika Raja via WhatsApp atau telepon. Kunjungi lokasi pangkalan operasional kami dan simak syarat ketentuan sewa.',
+  description: 'Hubungi admin Teratak Andika Raja via WhatsApp atau telepon. Kunjungi lokasi pangkalan operasional kami di Kota Subulussalam dan simak syarat ketentuan sewa.',
 };
 
 export default function ContactPage() {
   return (
-    <div className="py-10 sm:py-16 bg-[#FAF7F2] min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <div className="py-8 sm:py-12 bg-[#FBFBFA] min-h-screen">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto space-y-3 pb-4 border-b border-[#C29B38]/20">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-[#F4EFE6] text-[#9A7422] border border-[#C29B38]/30 text-xs font-semibold">
-            <Phone className="w-4 h-4 text-[#064E3B]" />
+        <div className="text-center max-w-2xl mx-auto space-y-2.5 pb-4 border-b border-zinc-200">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-zinc-100 text-zinc-800 border border-zinc-200 text-xs font-semibold">
+            <Phone className="w-3.5 h-3.5 text-zinc-700" />
             <span>Layanan Ramah & Konsultasi Gratis</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-heading font-bold text-[#064E3B] tracking-tight">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-zinc-950 tracking-tight">
             Kontak & Lokasi Pangkalan
           </h1>
-          <p className="text-sm sm:text-base text-stone-600 leading-relaxed">
-            Ingin survei lokasi pekarangan rumah, konsultasi kebutuhan tenda, atau langsung memesan jadwal? Hubungi kami kapan pun.
+          <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed">
+            Ingin survei lokasi pekarangan rumah, konsultasi kebutuhan ukuran tenda, atau langsung memesan jadwal? Hubungi kami kapan pun.
           </p>
         </div>
 
         {/* Contact Info Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           
-          <div className="bg-white p-6 sm:p-8 rounded-xl border border-[#C29B38]/35 shadow-xs flex flex-col items-center text-center space-y-3">
-            <div className="w-12 h-12 rounded-lg bg-[#FAF7F2] text-[#064E3B] border border-[#C29B38]/30 flex items-center justify-center">
-              <MessageSquare className="w-6 h-6" />
+          <div className="bg-white p-6 rounded-xl border border-zinc-200 shadow-2xs flex flex-col items-center text-center space-y-2.5">
+            <div className="w-11 h-11 rounded-lg bg-zinc-50 text-zinc-900 border border-zinc-200 flex items-center justify-center">
+              <MessageSquare className="w-5 h-5 text-emerald-600" />
             </div>
-            <h3 className="font-heading font-bold text-[#064E3B] text-lg">WhatsApp Pengelola</h3>
-            <p className="text-xs text-stone-600">
-              Respon cepat untuk tanya harga, varian slayar, dan booking tanggal.
+            <h3 className="font-bold text-zinc-950 text-base">WhatsApp Pengelola</h3>
+            <p className="text-xs text-zinc-600 leading-relaxed">
+              Respon cepat untuk tanya harga, varian slayar, dan booking tanggal acara.
             </p>
             <a
               href={getWhatsAppUrl({})}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-sm bg-[#064E3B] text-[#D4AF37] hover:bg-[#022C22] border border-[#C29B38]/50 transition-colors shadow-xs"
+              className="mt-1 inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold text-xs text-white bg-zinc-900 hover:bg-zinc-800 transition-colors shadow-2xs"
             >
               <span>+62 822-8490-3333</span>
             </a>
           </div>
 
-          <div className="bg-white p-6 sm:p-8 rounded-xl border border-[#C29B38]/35 shadow-xs flex flex-col items-center text-center space-y-3">
-            <div className="w-12 h-12 rounded-lg bg-[#FAF7F2] text-[#9A7422] border border-[#C29B38]/30 flex items-center justify-center">
-              <MapPin className="w-6 h-6" />
+          <div className="bg-white p-6 rounded-xl border border-zinc-200 shadow-2xs flex flex-col items-center text-center space-y-2.5">
+            <div className="w-11 h-11 rounded-lg bg-zinc-50 text-zinc-900 border border-zinc-200 flex items-center justify-center">
+              <MapPin className="w-5 h-5 text-zinc-700" />
             </div>
-            <h3 className="font-heading font-bold text-[#064E3B] text-lg">Pangkalan Operasional</h3>
-            <p className="text-xs text-stone-600 leading-relaxed">
+            <h3 className="font-bold text-zinc-950 text-base">Pangkalan Operasional</h3>
+            <p className="text-xs text-zinc-600 leading-relaxed">
               Jl. Teuku Umar, Penanggalan, Kec. Penanggalan, Kota Subulussalam, Aceh 24782.
             </p>
-            <span className="text-xs font-semibold text-[#8C6514] bg-[#F4EFE6] px-3 py-1 rounded-md border border-[#C29B38]/30">
+            <span className="text-[11px] font-semibold text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200">
               Survei Lokasi & Antar Area Subulussalam
             </span>
           </div>
 
-          <div className="bg-white p-6 sm:p-8 rounded-xl border border-[#C29B38]/35 shadow-xs flex flex-col items-center text-center space-y-3">
-            <div className="w-12 h-12 rounded-lg bg-[#FAF7F2] text-[#064E3B] border border-[#C29B38]/30 flex items-center justify-center">
-              <Clock className="w-6 h-6" />
+          <div className="bg-white p-6 rounded-xl border border-zinc-200 shadow-2xs flex flex-col items-center text-center space-y-2.5">
+            <div className="w-11 h-11 rounded-lg bg-zinc-50 text-zinc-900 border border-zinc-200 flex items-center justify-center">
+              <Clock className="w-5 h-5 text-zinc-700" />
             </div>
-            <h3 className="font-heading font-bold text-[#064E3B] text-lg">Waktu Layanan</h3>
-            <p className="text-xs text-stone-600">
+            <h3 className="font-bold text-zinc-950 text-base">Waktu Layanan</h3>
+            <p className="text-xs text-zinc-600">
               Konsultasi & Chat: 07.00 - 22.00 WIB
             </p>
-            <p className="text-xs text-stone-600">
+            <p className="text-xs text-zinc-600">
               Pemasangan: Sesuai Kesepakatan (Bisa H-1)
             </p>
-            <span className="text-xs font-semibold text-[#064E3B] bg-[#FAF7F2] px-3 py-1 rounded-md border border-[#C29B38]/30">
+            <span className="text-[11px] font-semibold text-zinc-700 bg-zinc-100 px-2.5 py-0.5 rounded-md border border-zinc-200">
               Buka Setiap Hari (Senin - Minggu)
             </span>
           </div>
@@ -90,12 +90,12 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           
           {/* Google Maps Embed */}
-          <div className="lg:col-span-7 bg-white p-6 rounded-xl border border-[#C29B38]/35 shadow-xs space-y-4">
-            <h2 className="text-lg font-heading font-bold text-[#064E3B] flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-[#9A7422]" />
-              <span>Peta Lokasi & Area Operasional</span>
+          <div className="lg:col-span-7 bg-white p-6 rounded-xl border border-zinc-200 shadow-2xs space-y-3.5">
+            <h2 className="text-base font-bold text-zinc-950 flex items-center gap-2">
+              <MapPin className="w-4 h-4 text-zinc-700" />
+              <span>Peta Lokasi & Area Operasional Subulussalam</span>
             </h2>
-            <div className="relative w-full h-80 sm:h-96 rounded-lg overflow-hidden bg-[#F4EFE6] border border-[#C29B38]/30">
+            <div className="relative w-full h-80 sm:h-96 rounded-lg overflow-hidden bg-zinc-100 border border-zinc-200">
               <iframe
                 title="Peta Lokasi Teratak Andika Raja - Subulussalam Aceh"
                 src="https://maps.google.com/maps?q=J2H9%2BWH6%2C+Jl.+Teuku+Umar%2C+Penanggalan%2C+Kec.+Penanggalan%2C+Kota+Subulussalam%2C+Aceh+24782&t=&z=16&ie=UTF8&iwloc=&output=embed"
@@ -107,38 +107,38 @@ export default function ContactPage() {
                 referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
-            <div className="flex items-center gap-2 text-xs text-stone-600">
-              <Truck className="w-4 h-4 text-[#064E3B]" />
+            <div className="flex items-center gap-2 text-xs text-zinc-600">
+              <Truck className="w-4 h-4 text-emerald-700 shrink-0" />
               <span>Melayani pengiriman dan pemasangan terstandar ke rumah warga, gedung, lapangan, maupun instansi di Kota Subulussalam dan sekitarnya.</span>
             </div>
           </div>
 
           {/* Terms & Conditions Summary */}
-          <div className="lg:col-span-5 bg-white p-6 sm:p-7 rounded-xl border border-[#C29B38]/35 shadow-xs space-y-5">
-            <h2 className="text-lg font-heading font-bold text-[#064E3B] flex items-center gap-2">
-              <FileText className="w-5 h-5 text-[#9A7422]" />
+          <div className="lg:col-span-5 bg-white p-6 rounded-xl border border-zinc-200 shadow-2xs space-y-4">
+            <h2 className="text-base font-bold text-zinc-950 flex items-center gap-2">
+              <FileText className="w-4 h-4 text-zinc-700" />
               <span>Ketentuan & Alur Sewa</span>
             </h2>
 
-            <div className="space-y-4 text-xs sm:text-sm text-stone-700 leading-relaxed">
-              <div className="p-3.5 bg-[#FAF7F2] rounded-lg border border-[#C29B38]/30">
-                <span className="font-heading font-bold text-[#064E3B] block mb-1">1. Pemesanan & Booking Jadwal</span>
+            <div className="space-y-3 text-xs leading-relaxed">
+              <div className="p-3.5 bg-zinc-50 rounded-lg border border-zinc-200">
+                <span className="font-bold text-zinc-900 block mb-1">1. Pemesanan & Booking Jadwal</span>
                 Disarankan memesan minimal 3-7 hari sebelum hari acara untuk memastikan ketersediaan ukuran tenda dan kombinasi warna kain slayar yang Anda kehendaki.
               </div>
 
-              <div className="p-3.5 bg-[#FAF7F2] rounded-lg border border-[#C29B38]/30">
-                <span className="font-heading font-bold text-[#064E3B] block mb-1">2. Waktu Pemasangan & Pembongkaran</span>
-                Pemasangan tenda umumnya dilakukan pada H-1 menjelang acara agar Anda dapat menata dekorasi pelaminan dan meja makanan. Pembongkaran dilakukan pada H+1 atau sesuai kesepakatan.
+              <div className="p-3.5 bg-zinc-50 rounded-lg border border-zinc-200">
+                <span className="font-bold text-zinc-900 block mb-1">2. Waktu Pemasangan & Pembongkaran</span>
+                Pemasangan tenda umumnya dilakukan pada H-1 menjelang acara agar Anda dapat menata pelaminan dan meja makanan. Pembongkaran dilakukan pada H+1 atau sesuai kesepakatan.
               </div>
 
-              <div className="p-3.5 bg-[#FAF7F2] rounded-lg border border-[#C29B38]/30">
-                <span className="font-heading font-bold text-[#064E3B] block mb-1">3. Ongkos Pasang & Angkut</span>
-                Biaya sewa sudah mencakup ongkos pasang dan bongkar oleh tim kami. Untuk radius tertentu dalam wilayah jangkauan, tidak dikenakan biaya tambahan.
+              <div className="p-3.5 bg-zinc-50 rounded-lg border border-zinc-200">
+                <span className="font-bold text-zinc-900 block mb-1">3. Ongkos Pasang & Angkut</span>
+                Biaya sewa sudah mencakup ongkos pasang dan bongkar oleh tim kami. Untuk radius tertentu dalam wilayah Subulussalam, tidak dikenakan biaya tambahan.
               </div>
 
-              <div className="p-3.5 bg-[#F4EFE6] rounded-lg border border-[#C29B38]/40 flex items-center gap-3">
-                <ShieldCheck className="w-6 h-6 text-[#064E3B] shrink-0" />
-                <span className="text-[#064E3B] text-xs font-semibold">
+              <div className="p-3.5 bg-emerald-50/50 rounded-lg border border-emerald-200 flex items-center gap-2.5">
+                <ShieldCheck className="w-5 h-5 text-emerald-700 shrink-0" />
+                <span className="text-emerald-900 text-xs font-medium">
                   Seluruh peralatan dalam kondisi bersih dan dicek kekuatannya bersama saat serah terima.
                 </span>
               </div>

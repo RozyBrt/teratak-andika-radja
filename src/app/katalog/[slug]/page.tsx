@@ -55,20 +55,20 @@ export default async function ProductDetailPage({ params }: PageProps) {
   }
 
   return (
-    <div className="py-8 sm:py-12 bg-slate-50 min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 sm:space-y-8">
+    <div className="py-8 sm:py-12 bg-[#FBFBFA] min-h-screen">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
         
         {/* Breadcrumb Navigation */}
-        <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs sm:text-sm text-slate-500">
-          <Link href="/" className="hover:text-amber-600 transition-colors">
+        <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs sm:text-sm text-zinc-500">
+          <Link href="/" className="hover:text-zinc-950 transition-colors">
             Beranda
           </Link>
-          <ChevronRight className="w-4 h-4 text-slate-400" />
-          <Link href="/katalog" className="hover:text-amber-600 transition-colors">
+          <ChevronRight className="w-3.5 h-3.5 text-zinc-400" />
+          <Link href="/katalog" className="hover:text-zinc-950 transition-colors">
             Katalog
           </Link>
-          <ChevronRight className="w-4 h-4 text-slate-400" />
-          <span className="text-slate-900 font-semibold truncate max-w-xs sm:max-w-md">
+          <ChevronRight className="w-3.5 h-3.5 text-zinc-400" />
+          <span className="text-zinc-900 font-semibold truncate max-w-xs sm:max-w-md">
             {product.title}
           </span>
         </nav>
@@ -77,9 +77,9 @@ export default async function ProductDetailPage({ params }: PageProps) {
         <div>
           <Link
             href="/katalog"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-amber-700 hover:text-amber-800 bg-amber-50 px-3.5 py-1.5 rounded-lg border border-amber-200/50"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-zinc-700 hover:text-zinc-950 bg-white px-3 py-1.5 rounded-lg border border-zinc-200 transition-colors"
           >
-            <ArrowLeft className="w-4 h-4" />
+            <ArrowLeft className="w-3.5 h-3.5" />
             <span>Kembali ke Katalog</span>
           </Link>
         </div>

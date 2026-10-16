@@ -1,45 +1,40 @@
 import type { Metadata, Viewport } from "next";
-import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import FloatingWhatsAppButton from "@/components/common/FloatingWhatsAppButton";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-  display: "swap",
-});
-
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
   subsets: ["latin"],
   display: "swap",
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
-  themeColor: "#064e3b",
+  themeColor: "#18181b",
 };
 
 export const metadata: Metadata = {
-  title: "Teratak Andika Raja: Sewa Teratak, Pentas & Perlengkapan Pesta",
-  description: "Jasa penyewaan teratak tenda, pentas panggung, kursi, dan perlengkapan hajatan pesta terpercaya. Rapi, kokoh, transparan, dan tepat waktu.",
+  title: "Teratak Andika Raja: Katalog Sewa Tenda & Perlengkapan Acara",
+  description: "Katalog sewa tenda teratak pesta, pentas panggung, kursi, dan perlengkapan hajatan terpercaya. Spesifikasi teruji, konstruksi kokoh, dan tarif transparan.",
   keywords: [
     "sewa teratak",
-    "sewa tenda pernikahan",
+    "sewa tenda pesta",
+    "katalog sewa tenda",
     "sewa pentas panggung",
     "sewa kursi futura",
     "teratak andika raja",
-    "tenda pesta",
-    "tenda slayar melayu"
+    "tenda hajatan subulussalam"
   ],
   authors: [{ name: "Teratak Andika Raja" }],
   openGraph: {
-    title: "Teratak Andika Raja: Sewa Teratak & Perlengkapan Pesta",
-    description: "Katalog lengkap sewa tenda teratak, pentas, kursi, dan paket hajatan dengan harga transparan.",
+    title: "Teratak Andika Raja: Katalog Sewa Tenda & Perlengkapan Acara",
+    description: "Katalog sewa tenda teratak, pentas, kursi pesta, dan paket bundling dengan spesifikasi transparan.",
     type: "website",
     locale: "id_ID",
   },
@@ -53,9 +48,9 @@ export default function RootLayout({
   return (
     <html 
       lang="id" 
-      className={`${playfair.variable} ${jakarta.variable} h-full antialiased scroll-smooth`}
+      className={`${jakarta.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col font-sans bg-[#FAF7F2] text-[#1C1917]">
+      <body className="min-h-full flex flex-col font-sans bg-[#FBFBFA] text-[#18181B]">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

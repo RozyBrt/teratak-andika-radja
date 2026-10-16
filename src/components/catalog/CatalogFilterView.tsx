@@ -34,21 +34,21 @@ export default function CatalogFilterView({
       });
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       
       {/* Category Filter Pills / Tabs */}
-      <div className="flex items-center gap-2.5 overflow-x-auto pb-2 scrollbar-none">
+      <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
         <button
           type="button"
           onClick={() => handleSelectCategory('semua')}
-          className={`px-4 py-2.5 rounded-lg text-xs sm:text-sm font-semibold whitespace-nowrap transition-all flex items-center gap-2 border ${
+          className={`px-3.5 py-2 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors flex items-center gap-1.5 border ${
             activeCategorySlug === 'semua'
-              ? 'bg-[#064E3B] text-[#D4AF37] border-[#C29B38]/60 shadow-xs'
-              : 'bg-white text-stone-700 border-[#C29B38]/30 hover:border-[#C29B38] hover:text-[#064E3B]'
+              ? 'bg-zinc-900 text-white border-zinc-900 shadow-2xs'
+              : 'bg-white text-zinc-700 border-zinc-200 hover:border-zinc-400 hover:text-zinc-950'
           }`}
         >
-          <Filter className="w-4 h-4" />
-          <span>Semua Kategori ({initialProducts.length})</span>
+          <Filter className="w-3.5 h-3.5" />
+          <span>Semua ({initialProducts.length})</span>
         </button>
 
         {categories.map((cat) => {
@@ -60,17 +60,17 @@ export default function CatalogFilterView({
               key={cat.id}
               type="button"
               onClick={() => handleSelectCategory(cat.slug)}
-              className={`px-4 py-2.5 rounded-lg text-xs sm:text-sm font-semibold whitespace-nowrap transition-all flex items-center gap-2 border ${
+              className={`px-3.5 py-2 rounded-lg text-xs font-semibold whitespace-nowrap transition-colors flex items-center gap-1.5 border ${
                 isActive
-                  ? 'bg-[#064E3B] text-[#D4AF37] border-[#C29B38]/60 shadow-xs'
-                  : 'bg-white text-stone-700 border-[#C29B38]/30 hover:border-[#C29B38] hover:text-[#064E3B]'
+                  ? 'bg-zinc-900 text-white border-zinc-900 shadow-2xs'
+                  : 'bg-white text-zinc-700 border-zinc-200 hover:border-zinc-400 hover:text-zinc-950'
               }`}
             >
-              {cat.slug === 'teratak' && <Tent className="w-4 h-4" />}
-              {cat.slug === 'pentas' && <Layers className="w-4 h-4" />}
-              {cat.slug === 'kursi-meja' && <Armchair className="w-4 h-4" />}
-              {cat.slug === 'dekorasi' && <Palette className="w-4 h-4" />}
-              {cat.slug === 'paket-bundling' && <PackageCheck className="w-4 h-4" />}
+              {cat.slug === 'teratak' && <Tent className="w-3.5 h-3.5" />}
+              {cat.slug === 'pentas' && <Layers className="w-3.5 h-3.5" />}
+              {cat.slug === 'kursi-meja' && <Armchair className="w-3.5 h-3.5" />}
+              {cat.slug === 'dekorasi' && <Palette className="w-3.5 h-3.5" />}
+              {cat.slug === 'paket-bundling' && <PackageCheck className="w-3.5 h-3.5" />}
               <span>{cat.name} ({count})</span>
             </button>
           );
@@ -79,18 +79,18 @@ export default function CatalogFilterView({
 
       {/* Product List Grid */}
       {filteredProducts.length === 0 ? (
-        <div className="text-center py-16 bg-white rounded-xl border border-[#C29B38]/30 p-8">
-          <p className="text-stone-600 font-medium">Belum ada item untuk kategori ini.</p>
+        <div className="text-center py-16 bg-white rounded-xl border border-zinc-200 p-8 shadow-2xs">
+          <p className="text-zinc-600 text-sm font-medium">Belum ada item untuk kategori ini.</p>
           <button
             type="button"
             onClick={() => handleSelectCategory('semua')}
-            className="mt-4 px-5 py-2.5 bg-[#064E3B] text-[#D4AF37] text-sm font-semibold rounded-lg hover:bg-[#022C22] border border-[#C29B38]/50"
+            className="mt-4 px-4 py-2 bg-zinc-900 text-white text-xs font-semibold rounded-lg hover:bg-zinc-800 transition-colors"
           >
             Kembali ke Semua Produk
           </button>
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
