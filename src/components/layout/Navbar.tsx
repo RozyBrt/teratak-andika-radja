@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Menu, X, MessageSquare, Tent } from 'lucide-react';
+import { Menu, X, MessageSquare } from 'lucide-react';
 import { getWhatsAppUrl } from '@/lib/data';
 
 const NAV_LINKS = [
@@ -24,8 +25,14 @@ export default function Navbar() {
           
           {/* Logo & Brand Identity */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-lg bg-zinc-900 text-white flex items-center justify-center group-hover:bg-[#064E3B] transition-colors shadow-2xs">
-              <Tent className="w-5 h-5 stroke-[2.2]" />
+            <div className="relative w-10 sm:w-11 h-10 sm:h-11 rounded-full overflow-hidden border border-zinc-200 shadow-2xs group-hover:scale-105 transition-transform bg-[#0a192f] shrink-0">
+              <Image
+                src="/logo.png"
+                alt="Logo Teratak Andika Raja"
+                fill
+                priority
+                className="object-cover"
+              />
             </div>
             <div>
               <span className="block text-lg sm:text-xl font-bold tracking-tight text-zinc-900 group-hover:text-zinc-700 transition-colors">

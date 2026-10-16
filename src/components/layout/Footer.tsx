@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Tent, Phone, MapPin, Clock, CheckCircle2 } from 'lucide-react';
+import Image from 'next/image';
+import { Phone, MapPin, Clock, CheckCircle2 } from 'lucide-react';
 import { getWhatsAppUrl } from '@/lib/data';
 
 export default function Footer() {
@@ -11,8 +12,13 @@ export default function Footer() {
           {/* Brand & Slogan */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-white shadow-2xs">
-                <Tent className="w-5 h-5 stroke-[2]" />
+              <div className="relative w-10 h-10 rounded-full overflow-hidden border border-zinc-700 shadow-2xs bg-[#0a192f] shrink-0">
+                <Image
+                  src="/logo.png"
+                  alt="Logo Teratak Andika Raja"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <span className="text-lg font-bold text-white tracking-tight">
                 Teratak Andika Raja

@@ -20,8 +20,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://teratak-andika-radja.vercel.app"),
   title: "Teratak Andika Raja: Katalog Sewa Tenda & Perlengkapan Acara",
-  description: "Katalog sewa tenda teratak pesta, pentas panggung, kursi, dan perlengkapan hajatan terpercaya. Spesifikasi teruji, konstruksi kokoh, dan tarif transparan.",
+  description: "Katalog sewa tenda teratak pesta, pentas panggung, kursi, dan perlengkapan hajatan terpercaya di Kota Subulussalam. Spesifikasi teruji, konstruksi kokoh, dan layanan profesional.",
   keywords: [
     "sewa teratak",
     "sewa tenda pesta",
@@ -29,14 +30,41 @@ export const metadata: Metadata = {
     "sewa pentas panggung",
     "sewa kursi futura",
     "teratak andika raja",
-    "tenda hajatan subulussalam"
+    "tenda hajatan subulussalam",
+    "penyewaan tenda penanggalan"
   ],
   authors: [{ name: "Teratak Andika Raja" }],
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     title: "Teratak Andika Raja: Katalog Sewa Tenda & Perlengkapan Acara",
-    description: "Katalog sewa tenda teratak, pentas, kursi pesta, dan paket bundling dengan spesifikasi transparan.",
-    type: "website",
+    description: "Katalog sewa tenda teratak pesta, pentas panggung, kursi, dan perlengkapan hajatan di Kota Subulussalam.",
+    url: "https://teratak-andika-radja.vercel.app",
+    siteName: "Teratak Andika Raja",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 800,
+        height: 800,
+        alt: "Logo Resmi Teratak Andika Raja Subulussalam",
+      },
+    ],
     locale: "id_ID",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Teratak Andika Raja: Katalog Sewa Tenda & Perlengkapan Acara",
+    description: "Katalog sewa tenda teratak, pentas panggung, dan perlengkapan hajatan di Kota Subulussalam.",
+    images: ["/og-image.png"],
   },
 };
 
