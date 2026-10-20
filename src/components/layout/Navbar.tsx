@@ -83,7 +83,7 @@ export default function Navbar() {
               type="button"
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-md text-zinc-700 hover:text-zinc-950 hover:bg-zinc-100 focus:outline-none transition-colors border border-zinc-200"
-              aria-label="Buka menu navigasi"
+              aria-label={isOpen ? "Tutup menu navigasi" : "Buka menu navigasi"}
             >
               {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>

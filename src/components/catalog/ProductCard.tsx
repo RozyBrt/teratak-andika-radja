@@ -67,7 +67,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         {/* Price & Actions */}
         <div className="pt-3.5 border-t border-zinc-150 flex items-center justify-between gap-3">
           <div>
-            <span className="block text-[10px] font-medium text-zinc-400 uppercase tracking-wider">Tarif Sewa</span>
+            <span className="block text-[10px] font-semibold text-zinc-600 uppercase tracking-wider">Tarif Sewa</span>
             <div className="flex items-baseline gap-1">
               <span className="text-xs sm:text-sm font-bold text-zinc-900">
                 Hubungi Pengelola

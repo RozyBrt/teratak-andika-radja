@@ -35,9 +35,9 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-semibold text-sm mb-3.5 tracking-tight">
+            <h3 className="text-white font-semibold text-sm mb-3.5 tracking-tight">
               Navigasi Halaman
-            </h4>
+            </h3>
             <ul className="space-y-2 text-xs sm:text-sm">
               <li>
                 <Link href="/" className="hover:text-white transition-colors">
@@ -74,9 +74,9 @@ export default function Footer() {
 
           {/* Layanan & Keunggulan */}
           <div>
-            <h4 className="text-white font-semibold text-sm mb-3.5 tracking-tight">
+            <h3 className="text-white font-semibold text-sm mb-3.5 tracking-tight">
               Layanan Acara
-            </h4>
+            </h3>
             <ul className="space-y-2 text-xs sm:text-sm text-zinc-400">
               <li>• Resepsi Pernikahan & Akad</li>
               <li>• Syukuran Khitanan & Aqiqah</li>
@@ -88,9 +88,9 @@ export default function Footer() {
 
           {/* Kontak & Lokasi */}
           <div className="space-y-3.5">
-            <h4 className="text-white font-semibold text-sm mb-3.5 tracking-tight">
+            <h3 className="text-white font-semibold text-sm mb-3.5 tracking-tight">
               Pangkalan & Kontak
-            </h4>
+            </h3>
             <div className="space-y-2.5 text-xs sm:text-sm">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-zinc-400 shrink-0 mt-0.5" />
