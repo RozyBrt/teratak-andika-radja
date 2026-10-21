@@ -4,9 +4,9 @@ Website profil usaha dan katalog interaktif persewaan tenda teratak pesta, penta
 
 * **Live Website:** [https://teratak-andika-radja.vercel.app](https://teratak-andika-radja.vercel.app)
 * **Design Philosophy:** Anti-AI Slop (Clean & Modern Architectural Catalog)
-* **Peta Navigasi & Langkah Selanjutnya:** Baca [NEXT_STEPS_ROADMAP.md](./NEXT_STEPS_ROADMAP.md)
-* **Dokumentasi Lengkap Proyek:** Baca [PROJECT_DOCUMENTATION.md](./PROJECT_DOCUMENTATION.md)
-* **Panduan Migrasi Data Asli:** Baca [PANDUAN_DATA_ASLI.md](./PANDUAN_DATA_ASLI.md)
+* **Peta Navigasi & Langkah Selanjutnya:** Baca [NEXT_STEPS_ROADMAP.md](docs/NEXT_STEPS_ROADMAP.md)
+* **Dokumentasi Lengkap Proyek:** Baca [PROJECT_DOCUMENTATION.md](docs/PROJECT_DOCUMENTATION.md)
+* **Panduan Migrasi Data Asli:** Baca [PANDUAN_DATA_ASLI.md](docs/PANDUAN_DATA_ASLI.md)
 
 ---
 
@@ -47,13 +47,15 @@ npm run build
 
 ---
 
-## Dokumentasi Pendukung
+## Dokumentasi Pendukung (Folder `docs/`)
 
-* [`PROJECT_DOCUMENTATION.md`](./PROJECT_DOCUMENTATION.md): Panduan menyeluruh isi proyek, struktur file, data layer, skema database Supabase, dan roadmap.
-* [`PANDUAN_DATA_ASLI.md`](./PANDUAN_DATA_ASLI.md): Checklist dan panduan teknis memasukkan foto asli armada dan daftar tarif resmi dari orang tua.
-* [`DESIGN.md`](./DESIGN.md): Pedoman sistem desain Clean & Modern Architectural Catalog, dial Anti-AI Slop, palet warna, dan tipografi.
-* [`supabase/schema.sql`](./supabase/schema.sql): Skema database PostgreSQL (tabel `categories`, `products`, `product_variants`).
-* [`supabase/seed.sql`](./supabase/seed.sql): Data awal katalog produk dan varian.
+* [`docs/NEXT_STEPS_ROADMAP.md`](docs/NEXT_STEPS_ROADMAP.md): Panduan eksekusi langkah selanjutnya, peta navigasi dokumen, dan instruksi prompt untuk AI Agent.
+* [`docs/PROJECT_DOCUMENTATION.md`](docs/PROJECT_DOCUMENTATION.md): Panduan menyeluruh isi proyek, struktur file, data layer, skema database Supabase, dan roadmap.
+* [`docs/PANDUAN_DATA_ASLI.md`](docs/PANDUAN_DATA_ASLI.md): Checklist dan panduan teknis memasukkan foto asli armada dan daftar tarif resmi dari orang tua.
+* [`docs/DESIGN.md`](docs/DESIGN.md): Pedoman sistem desain Clean & Modern Architectural Catalog, dial Anti-AI Slop, palet warna, dan tipografi.
+* [`docs/PRD.md`](docs/PRD.md): Product Requirement Document awal untuk arsitektur fitur dan flow website.
+* [`supabase/schema.sql`](supabase/schema.sql): Skema database PostgreSQL (tabel `categories`, `products`, `product_variants`).
+* [`supabase/seed.sql`](supabase/seed.sql): Data awal katalog produk dan varian.
 
 ---
 

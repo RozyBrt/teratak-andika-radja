@@ -105,11 +105,17 @@ Teratak-Andika-Raja/
 │   ├── schema.sql              # Definisi struktur database PostgreSQL, index, dan RLS security
 │   └── seed.sql                # Data awal kategori, produk, dan varian (dengan valid UUID heksadesimal)
 │
+├── docs/                       # Folder dokumentasi dan panduan proyek
+│   ├── NEXT_STEPS_ROADMAP.md   # Master action plan dan peta navigasi eksekusi
+│   ├── PROJECT_DOCUMENTATION.md# Dokumentasi teknis komprehensif
+│   ├── DESIGN.md               # Pedoman sistem desain Clean & Modern & dial Anti-Slop
+│   ├── PANDUAN_DATA_ASLI.md    # Checklist migrasi foto armada & tarif resmi
+│   └── PRD.md                  # Product Requirement Document spesifikasi awal
+│
 ├── .env.local                  # Environment variables lokal (diabaikan oleh git)
 ├── .env.local.example          # Template contoh konfigurasi environment
-├── DESIGN.md                   # Dokumen pedoman sistem desain Melayu & dial Anti-Slop
 ├── AGENTS.md                   # Instruksi perilaku untuk AI agent
-├── product_requirement_document_teratak_andika_raja.md  # Dokumen PRD spesifikasi awal
+├── README.md                   # Ringkasan cepat & panduan pengembang
 └── package.json                # Dependensi proyek dan npm scripts
 ```
 

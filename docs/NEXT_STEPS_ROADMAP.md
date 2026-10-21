@@ -14,8 +14,8 @@ Gunakan tabel ini sebagai panduan cepat ketika mencari referensi tertentu:
 | **[`PROJECT_DOCUMENTATION.md`](./PROJECT_DOCUMENTATION.md)** | **Buku manual teknis lengkap.** Baca jika ingin memahami arsitektur Next.js App Router, skema database Supabase, layer data hybrid, SEO, dan struktur kode. |
 | **[`DESIGN.md`](./DESIGN.md)** | **Pedoman visual & estetika.** Wajib dibaca sebelum mengedit antarmuka (UI) untuk menjaga tema *Clean & Modern Architectural Catalog* dan kepatuhan aturan *Anti-AI Slop*. |
 | **[`PANDUAN_DATA_ASLI.md`](./PANDUAN_DATA_ASLI.md)** | **Checklist data nyata usaha.** Baca ketika Anda sudah siap memasukkan foto armada tenda asli dan daftar tarif harga resmi dari orang tua. |
-| **[`README.md`](./README.md)** | **Ringkasan cepat repository.** Untuk instalasi dependensi, konfigurasi `.env.local`, dan menjalankan server lokal. |
-| **[`product_requirement_document_...md`](./product_requirement_document_teratak_andika_raja.md)** | **PRD dasar.** Berisi analisis kebutuhan pengguna, target audiens (B2C & B2B), dan daftar kebutuhan fungsional (FR-01 s/d FR-11). |
+| **[`README.md`](../README.md)** | **Ringkasan cepat repository.** Untuk instalasi dependensi, konfigurasi `.env.local`, dan menjalankan server lokal. |
+| **[`PRD.md`](./PRD.md)** | **PRD dasar.** Berisi analisis kebutuhan pengguna, target audiens (B2C & B2B), dan daftar kebutuhan fungsional (FR-01 s/d FR-11). |
 
 ---
 
@@ -72,7 +72,7 @@ Fitur ini membuat website Anda jauh lebih interaktif dan bermanfaat bagi calon p
      ```
 
 #### File Acuan untuk Fase Ini:
-* Pelajari komponen interaktif di [`src/components/catalog/ProductDetailInteractive.tsx`](./src/components/catalog/ProductDetailInteractive.tsx).
+* Pelajari komponen interaktif di [`src/components/catalog/ProductDetailInteractive.tsx`](../src/components/catalog/ProductDetailInteractive.tsx).
 * Pastikan gaya visual mematuhi [`DESIGN.md`](./DESIGN.md) (Clean & Modern).
 
 ---
@@ -107,10 +107,10 @@ Fitur ini membuat website Anda jauh lebih interaktif dan bermanfaat bagi calon p
 Ketika Anda membuka kembali sesi obrolan baru bersama asisten AI (Antigravity atau AI lainnya), Anda tidak perlu menjelaskan semuanya dari awal. Cukup berikan instruksi singkat seperti berikut:
 
 ### Contoh Prompt untuk Memulai Fase 1 (Kalkulator Sewa):
-> *"Halo, tolong baca file `NEXT_STEPS_ROADMAP.md` bagian FASE 1. Kita ingin mengerjakan fitur Kalkulator Simulasi Biaya Sewa (FR-09). Tetap patuhi pedoman visual di `DESIGN.md`. Buatkan rencana dan implementasinya."*
+> *"Halo, tolong baca file `docs/NEXT_STEPS_ROADMAP.md` bagian FASE 1. Kita ingin mengerjakan fitur Kalkulator Simulasi Biaya Sewa (FR-09). Tetap patuhi pedoman visual di `docs/DESIGN.md`. Buatkan rencana dan implementasinya."*
 
 ### Contoh Prompt untuk Memulai Fase 2 (Memasukkan Data Asli):
-> *"Halo, saya sudah memiliki foto armada tenda asli dan daftar harga resmi dari orang tua. Tolong baca file `PANDUAN_DATA_ASLI.md` dan `NEXT_STEPS_ROADMAP.md` bagian FASE 2, lalu bantu saya memperbarui datanya ke website."*
+> *"Halo, saya sudah memiliki foto armada tenda asli dan daftar harga resmi dari orang tua. Tolong baca file `docs/PANDUAN_DATA_ASLI.md` dan `docs/NEXT_STEPS_ROADMAP.md` bagian FASE 2, lalu bantu saya memperbarui datanya ke website."*
 
 ---
 
