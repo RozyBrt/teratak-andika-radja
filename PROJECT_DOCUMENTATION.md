@@ -208,7 +208,7 @@ npm run build
 Perintah ini akan menjalankan TypeScript compiler, validasi Turbopack, dan pre-rendering 18 rute statis (SSG termasuk manifest, sitemap, robots, icon, dan open-graph image).
 
 ### Cara Menambah atau Mengubah Data Produk
-Ada 2 cara utama (panduan lengkap checklist migrasi data asli dapat dibaca di [`PANDUAN_DATA_ASLI.md`](./PANDUAN_DATA_ASLI.md)):
+Ada 2 cara utama (panduan roadmap dan urutan eksekusi lengkap dapat dibaca di [`NEXT_STEPS_ROADMAP.md`](./NEXT_STEPS_ROADMAP.md), serta checklist migrasi data asli di [`PANDUAN_DATA_ASLI.md`](./PANDUAN_DATA_ASLI.md)):
 * **Cara A (Melalui Supabase Cloud):** Buka dashboard Supabase > Masuk ke **Table Editor** > Buka tabel `products` atau `product_variants` > Tambah atau ubah baris data langsung. Website akan otomatis menampilkan data terbaru.
 * **Cara B (Melalui Kode):** Perbarui file `supabase/seed.sql` dan sesuaikan cadangan mock di `src/lib/data.ts` agar lingkungan lokal tetap sinkron.
 
