@@ -33,25 +33,27 @@ Proyek ini dibangun menggunakan arsitektur modern Next.js App Router dengan pemi
 
 Proyek ini menerapkan sistem aturan ketat dari pedoman **Anti-AI Slop** (`miqdadbadjuber/anti-slop`) untuk menghindari tampilan website generik buatan AI. Detail lengkap tercatat pada [`DESIGN.md`](./DESIGN.md).
 
-### Tema Utama: "Klasik Resepsi & Nuansa Pesta Melayu (Royal Heritage & Warm Gold)"
-* **Karakter:** Hangat, bersahaja, berwibawa, dan sarat tradisi resepsi hajatan keluarga.
-* **Dial Settings:** `ENERGY: 2` (Tenang & bersahaja), `RHYTHM: 3` (Editorial bervariasi), `MOTION: 1` (Micro-interaksi halus).
+### Tema Utama: "Clean & Modern Architectural Catalog"
+* **Karakter & Jiwa:** Jernih, lapang (*spacious*), fungsional, dan presisi tinggi layaknya katalog furnitur/peralatan arsitektural modern. Foto produk menjadi pusat perhatian utama yang berbicara sendiri, didukung oleh tata letak terbuka dan tipografi modern yang tegas.
+* **Dial Settings:** `ENERGY: 1` (Tenang, lapang, fokus pada katalog, kejelasan foto dan spesifikasi), `RHYTHM: 2` (Modular teratur, hirarki visual proporsional, ruang bernapas lega antar-seksi), `MOTION: 1` (Mikro-interaksi halus, hover scale gambar terkontrol, tanpa animasi melayang/bouncing).
 
-### Palet Warna
-* **Deep Emerald Green** (`#064E3B` / `#022C22`): Warna utama kanopi teratak Melayu agung, melambangkan kekokohan dan keteduhan.
-* **Warm Metallic Gold** (`#D4AF37` / `#C29B38` / `#9A7422`): Aksen kemewahan pesta, garis ornamen, dan penegas status sewa.
-* **Warm Linen Background** (`#FAF7F2` / `#F4EFE6`): Latar netral hangat seperti kain terpal bersih, bukan putih rumah sakit steril (`#ffffff`).
-* **Text Tone:** Charcoal Brown (`#1C1917` / `#44403C`).
+### Palet Warna (Clean Modern Studio Palette)
+* **Latar Belakang Dasar:** *Soft Gallery Light* (`#FBFBFA`) dan permukaan kartu *Pure White* (`#FFFFFF`) dengan kontras sekunder *Light Mist* (`#F4F4F5`).
+* **Warna Teks Utama:** *Deep Ink Charcoal* (`#18181B` : Zinc 900) untuk judul, nama produk, dan harga.
+* **Warna Teks Sekunder:** *Muted Graphite* (`#52525B` : Zinc 600) untuk deskripsi dan spesifikasi ukuran.
+* **Border & Pembatas:** Garis arsitektural tipis 1px (`#E4E4E7` : Zinc 200).
+* **Warna Aksen Identitas:** *Deep Forest Pine* (`#064E3B` / `#0F766E`) sebagai penanda merek berwibawa dan terpercaya.
+* **Warna Aksen Aksi (CTA):** *High-Contrast Dark Charcoal* (`#18181B`) untuk navigasi dan tombol katalog, dipadukan dengan *Emerald WhatsApp* (`#059669`) untuk tombol komunikasi.
 
 ### Tipografi
-* **Heading / Judul:** `Playfair Display` (Serif klasik elegan untuk judul utama, banner, dan nama produk).
-* **Body / Teks Bacaan:** `Plus Jakarta Sans` (Sans-serif ergonomis dengan keterbacaan tinggi di layar HP).
+* **Display & Headings:** `Plus Jakarta Sans` (bobot `font-bold` & `font-semibold` dengan `tracking-tight`), memberikan kesan modern, bersih, dan berwibawa tanpa lekukan serif yang berat.
+* **Body & Spesifikasi:** `Plus Jakarta Sans` (bobot `font-normal` & `font-medium`), menjamin kenyamanan membaca ukuran tenda, dimensi tiang, dan rincian fasilitas di smartphone.
 
 ### Aturan Ketat untuk Perubahan Kode di Masa Depan
 1. **Dilarang menggunakan tanda hubung em dash (`—`):** Gunakan titik dua (`:`) atau tanda hubung standar (`-`).
 2. **Dilarang memakai icon sihir generik (`Sparkles`):** Gunakan icon nyata kontekstual (`Tent`, `Layers`, `Armchair`, `CheckCircle2`, dll).
-3. **Dilarang membuat pill badge mengambang tanpa makna fungsional:** Setiap badge harus berisi informasi nyata (misal: tarif, status ketersediaan, ukuran).
-4. **Dilarang memakai layout template klise "3 Langkah Sewa 1-2-3":** Ganti selalu dengan konten edukatif nyata (contoh: Panduan Memilih Ukuran Tenda Sesuai Luas Pekarangan Rumah).
+3. **Dilarang membuat pill badge mengambang tanpa makna fungsional:** Setiap badge harus berisi informasi nyata (misal: tarif sewa, status ketersediaan, ukuran pekarangan).
+4. **Dilarang memakai layout template klise "3 Langkah Sewa 1-2-3":** Ganti selalu dengan konten edukatif nyata (contoh: Panduan Menyesuaikan Ukuran Tenda Sesuai Luas Pekarangan Rumah).
 5. **Dilarang menggunakan bahasa buzzword kosong:** Gunakan istilah lokal yang dimengerti calon penyewa (contoh: *slayar*, *plafon polos*, *tiang pipa galvanis*, *multipleks panggung*).
 
 ---
@@ -60,15 +62,18 @@ Proyek ini menerapkan sistem aturan ketat dari pedoman **Anti-AI Slop** (`miqdad
 
 ```
 Teratak-Andika-Raja/
-├── public/                     # Aset statis publik (ikon, gambar, manifest)
+├── public/                     # Aset statis publik (logo.png, icon.png, og-image.png, favicon.ico)
 ├── src/
 │   ├── app/                    # Routing Next.js App Router
-│   │   ├── layout.tsx          # Root layout (Font Playfair & Plus Jakarta Sans, Navbar, Footer, Floating WA)
-│   │   ├── page.tsx            # Beranda utama (Hero, Value props, Kategori, Panduan, Produk unggulan)
-│   │   ├── globals.css         # Import font, variabel warna tema, utilitas gradient & dekorasi Melayu
+│   │   ├── layout.tsx          # Root layout (Font Plus Jakarta Sans, Navbar, Footer, Floating WA, Favicon & OG Metadata)
+│   │   ├── page.tsx            # Beranda utama 2-kolom (Hero studio, Kategori, Panduan pekarangan, Produk pilihan, CTA banner)
+│   │   ├── globals.css         # Variabel CSS tema Clean Modern Studio, Plus Jakarta Sans, tokens utilitas
 │   │   ├── sitemap.ts          # Generator XML Sitemap otomatis untuk SEO Google
 │   │   ├── robots.ts           # Konfigurasi robots.txt untuk crawler mesin pencari
 │   │   ├── manifest.ts         # Konfigurasi PWA Web App Manifest untuk instalasi mobile
+│   │   ├── icon.png            # Icon aplikasi otomatis Next.js
+│   │   ├── apple-icon.png      # Icon Apple Touch otomatis Next.js
+│   │   ├── opengraph-image.png # Pratinjau share link otomatis untuk WhatsApp & media sosial
 │   │   ├── katalog/
 │   │   │   ├── page.tsx        # Halaman filter & daftar katalog sewa
 │   │   │   └── [slug]/
@@ -200,7 +205,7 @@ Sebelum melakukan commit perubahan besar, selalu jalankan:
 ```bash
 npm run build
 ```
-Perintah ini akan menjalankan TypeScript compiler, validasi Turbopack, dan pre-rendering 15 halaman statis (SSG).
+Perintah ini akan menjalankan TypeScript compiler, validasi Turbopack, dan pre-rendering 18 rute statis (SSG termasuk manifest, sitemap, robots, icon, dan open-graph image).
 
 ### Cara Menambah atau Mengubah Data Produk
 Ada 2 cara utama (panduan lengkap checklist migrasi data asli dapat dibaca di [`PANDUAN_DATA_ASLI.md`](./PANDUAN_DATA_ASLI.md)):
@@ -221,15 +226,16 @@ Vercel akan otomatis mendeteksi push pada branch `main` dan memperbarui website 
 ## 9. Status Fitur PRD & Rencana Selanjutnya (Roadmap)
 
 ### Fitur yang Sudah Selesai (100% Active)
-* **FR-01:** Hero section agung Melayu & Profil Usaha
-* **FR-02:** Filter kategori produk interaktif
-* **FR-03:** Kartu produk interaktif dengan tarif jelas per unit/hari
-* **FR-04:** Dynamic variant switcher (dimensi & slayar)
-* **FR-05:** Spesifikasi teknis & fasilitas pemasangan
-* **FR-06:** Halaman Galeri Portofolio terpasang
-* **FR-07:** Generator link WhatsApp otomatis kontekstual
-* **FR-08:** Halaman Kontak, Peta Pangkalan, Jam Layanan, & Ketentuan Sewa
-* **SEO & Performa:** XML Sitemap, robots.txt, PWA Web Manifest, JSON-LD Schema LocalBusiness
+* **FR-01:** Hero section 2-kolom Clean & Modern Architectural Catalog & Profil Usaha Teratak Andika Raja.
+* **FR-02:** Filter kategori produk interaktif (*Semua, Teratak, Pentas & Panggung, Kursi & Meja, Dekorasi, Paket Bundling*).
+* **FR-03:** Kartu produk interaktif minimalis dengan informasi dimensi dan tombol tindakan cepat WhatsApp (*Tarif saat ini berstatus 'Hubungi Pengelola' menunggu finalisasi tarif resmi dari pemilik usaha*).
+* **FR-04:** Dynamic variant switcher (dimensi ukuran tenda & pilihan plafon polos/slayar kain).
+* **FR-05:** Spesifikasi teknis konstruksi & fasilitas include pemasangan rapi.
+* **FR-06:** Halaman Galeri Portofolio dokumentasi lapangan (`/galeri`).
+* **FR-07:** Generator link WhatsApp otomatis kontekstual sesuai nama barang dan varian yang dipilih.
+* **FR-08:** Halaman Kontak, Peta Google Maps presisi ke pangkalan Penanggalan, Jam Layanan, & Ketentuan Sewa (`/kontak`).
+* **Branding & Visual:** Logo resmi emblem emas-navy di favicon browser, pratinjau link share WhatsApp (*OpenGraph*), navbar, dan footer.
+* **SEO & Performa (Grade A Google PageSpeed Mobile):** XML Sitemap otomatis, robots.txt, PWA Web Manifest, JSON-LD Schema LocalBusiness, dengan skor PageSpeed **97 (Performa), 96 (Aksesibilitas), 100 (Best Practices), 100 (SEO)**.
 
 ### Fitur Tertunda / Backlog untuk Fase Berikutnya
 * **FR-09:** Fitur Nilai Tambah: Kalkulator Simulasi Biaya Sewa (Multi-item selector dengan ringkasan total estimasi biaya dan tombol kirim ke WA).
